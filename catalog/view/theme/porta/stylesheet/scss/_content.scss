@@ -1,0 +1,446 @@
+@import "sliders";
+.row.top-nav{
+  height: 20px;
+  margin: 10px 0 10px;
+  .sort, .limit{
+    font-size: 0.8em;
+    line-height: 2.1;
+  }
+  .limit{
+    float: right;
+  }
+}
+.maintop{
+  .container{
+    padding-top:15px;
+  }
+
+  [class*="wood"]{
+    background-image: url("../image/main/mainfon_w2.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .search{
+    /*font-family: "Helios Cond Light";*/
+    font-family: "Calibri";
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    position: relative;
+    #search{
+      padding:4px 3px 5px 27px;
+      height: 27px;
+      width:225px
+    }
+    .s-i{
+      height: 18px;
+      width:20px;
+      border:solid 1px #8a8a8a;
+      border-width:0 1px 0 0;
+      position: absolute;
+      left: 5px;
+      top: 4px;
+    }
+    #btnSearch{
+      color:#fff;
+      width:90px;
+      background: #f47920;
+      margin-top:-3px;
+    }
+
+  }
+  .b-c{
+    position: relative;
+    display: block;
+    padding-left: 0;
+
+
+  }
+  @media (max-width: 991px){
+    &.container-fluid{
+      padding:0
+    }
+    & > .row{
+      margin:0;
+    }
+    .container{
+      margin: 0 -15px;
+    }
+
+  }
+}
+.main{
+  main{
+    padding-left:10px;
+    padding-right: 10px;
+    &#block-ustanovka {
+      #blockSumma{
+        margin:0 0 20px;
+        font-family: 'Calibri_Bold';
+        line-height: 1.6;
+        .txt{
+          width:85%;
+          font-size: 1.5em;
+          float: left;
+          text-align: right;
+        }
+        #totalSum{
+          margin-left:85%;
+          text-align: right;
+          & span{
+            color:#333;
+            font-size: 1.1em;
+          }
+          #summa{
+            font-size: 1.6em;
+            color:#ff7a42;
+          }
+        }
+      }
+
+    }
+    &.product-cart{
+      margin:0 0 20px;
+      font-family: 'Calibri_Bold';
+      line-height: 1.6;
+      .txt{
+        width:75%;
+        font-size: 1.5em;
+        float: left;
+        text-align: right;
+      }
+      #totalSum{
+        margin-left:75%;
+        text-align: right;
+        & span{
+          color:#333;
+          font-size: 1.1em;
+        }
+        #summa{
+          font-size: 1.6em;
+          color:#ff7a42;
+        }
+      }
+    }
+  }
+
+  .contentblock{
+    background:#fff;
+    float:left;
+    width:100%;
+    &.padd{
+      padding:7px;
+    }
+    .buttons{
+      margin-top:10px;
+    }
+    .btn{
+      width:150px;
+      font-family: 'Calibri_Bold';
+      &:focus{
+        outline:none;
+      }
+    }
+  }
+  [class*="wood"]{
+    background-image: url("../image/main/mainfon_w2.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .top-model{
+    display: block;
+    position: relative;
+    /*
+    -webkit-box-shadow: 0px -3px 11px 0px rgba(50, 50, 50, 0.25), 0px 3px 11px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px -3px 11px 0px rgba(50, 50, 50, 0.25), 0px 3px 11px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px -3px 11px 0px rgba(50, 50, 50, 0.25), 0px 3px 11px 0px rgba(50, 50, 50, 0.25);
+    */
+    .container{
+      padding-left:0px;
+      padding-right: 0px;
+    }
+  }
+  .container{
+    padding-bottom: 15px;
+  }
+  & .row.wood2 .d-2{
+    display: block;
+    background-image: url("../image/main/mainfon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact-info{
+    .nav{
+      & > li a{
+        padding:0;
+        color: #4e68a1;
+        display: inline-block;
+        &:hover{
+          background: none;
+          text-decoration: underline;
+        }
+      }
+      & > li{
+        color: #333333;
+        span{
+          color: #575757;
+          display:inline-block;
+          width:80px;
+        }
+      }
+    }
+    .map{
+      margin:20px auto;
+      width:612px;
+      height: 450px;
+    }
+
+  }
+  .content_block{
+    background: #fff;
+    padding:10px;
+    overflow: hidden;
+  }
+  .c-b{
+    & [class*="col-"]:first-child{
+      padding-right: 0;
+    }
+    & [class*="col-"]:last-child{
+      padding-left: 0;
+    }
+
+    .i-bm{
+      .i-bmo{
+        width:100%;
+        height: 100px;
+        font-family: Helios_Regular;
+        line-height: 1;
+        text-align: center;
+        a{
+          text-decoration: underline;
+        }
+        .i-m{
+          width:42px;
+          height: 38px;
+          margin:0 auto;
+          background-image: url('../image/main/dif2-icons.png');
+          margin-bottom:20px;
+          &.a{
+            background-position: 0 0;
+            &:hover{
+              background-position: 0 -38px;
+            }
+          }
+          &.b{
+            background-position: -42px 0;
+            &:hover{
+              background-position: -42px -38px;
+            }
+          }
+          &.c{
+            background-position: -84px 0;
+            &:hover{
+              background-position: -84px -38px;
+            }
+          }
+          &.d{
+            background-position: -126px 0;
+            &:hover{
+              background-position: -126px -38px;
+            }
+          }
+        }
+      }
+    }
+    .i-qp{
+      height: 300px;
+      position: relative;
+
+      fieldset{
+        border:solid 1px #9d9fa4;
+        border-width:1px 0 0 0;
+        legend{
+          color:#464646;
+          display: inline;
+          border:none;
+          width:200px;
+          margin:0 0 5px 226px;
+          text-align: center;
+          font-family: Calibri_Bold;
+          line-height: 1.1;
+        }
+        & > div:nth-child(2){
+           padding-left:0;
+           padding-right: 3px;
+         }
+        & > div:nth-child(3){
+          padding-right:0;
+          padding-left: 3px
+        }
+        .thumbnail{
+          width: 30%;
+          background: transparent;
+          border:none;
+          float: left;
+          img{
+            float:left;
+            height: auto;
+          }
+        }
+        .content{
+          width:70%;
+          float: left;
+          font-family: Helvetica , Arial, sans-serif;
+          div.h2{
+            text-align: center;
+            font-size: 1.2em;
+          }
+          ul{
+            &.or {
+              padding-left: 0;
+              li {
+                display: inline-block;
+                font-size: 0.8em;
+                &.btn {
+                  height: auto;
+                  color: #fff;
+                  font-size: 0.8em;
+                  line-height: 1.0;
+                  padding: 5px 1px;
+                  background: #d87027;
+                  border-radius: 0px;
+                  &:hover{
+                    background: #c96c28;
+                  }
+                  a{
+                    color: #fff;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+            &.blue{
+              padding-left: 0;
+              li {
+                display: inline-block;
+                font-size: 0.8em;
+                line-height: 1.9;
+                a{
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  @media (max-width: 991px){
+    &.container-fluid{
+      padding:0
+    }
+    & > .row{
+      margin:0;
+    }
+    .top-model{
+      .container{
+
+      }
+    }
+    .container{
+      margin: 0 -15px;
+    }
+
+  }
+
+
+}
+.wood2{
+  .d-1 {
+    .shares-img{
+      width:60px;
+      height: 64px;
+      margin:0 auto;
+      background-image: url("../image/main/dif3-icons.png");
+    }
+    .shares1{
+      background-position: 0 0;
+    }
+    .shares2{
+      background-position: -60px 0;
+    }
+    .shares3{
+      background-position: -120px 0;
+    }
+    .shares4{
+      background-position: -180px 0;
+    }
+    .shares-text {
+      text-align: center;
+      font: 2em helvetica;
+      color: #464646;
+      margin: 20px 0 10px 0;
+    }
+    .shares-snos{
+      text-align:center;
+      font-size: 1.3em;
+      margin-bottom:15px
+    }
+    .icon-im-sh {
+      float: left;
+      margin-right: 10px;
+    }
+    .cell-text {
+      font: 18px 'Calibri';
+      line-height: 20px;
+      font-weight: 700;
+      text-align: center;
+      width:100%;
+
+    }
+    .in-cat {
+      text-align: center;
+      margin: 20px auto 30px;
+      width:150px;
+      display: block;
+      vertical-align: middle;
+      position:relative;
+      line-height: 1.3;
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+    .cont-dat-box{
+      bottom:-15px;
+    }
+  }
+  .d-2 {
+    fieldset {
+      border: solid 1px #ffffff;
+      border-width: 3px;
+      padding:25px;
+      margin:50px auto 20px auto;
+      font-size:14px;
+      font-family: 'Calibri';
+      position: relative;
+
+      width:750px;
+      legend {
+        display:inline-block;
+        color: #464646;
+        border: none;
+        width: 100px;
+        margin:0 0 0 290px;
+        text-align: center;
+        font-family: Calibri_Bold;
+        line-height: 1.1;
+      }
+    }
+  }
+
+}
+

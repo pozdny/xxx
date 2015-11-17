@@ -1,0 +1,115 @@
+.cart-info{
+  .table{
+    thead {
+      & > tr > th{
+        vertical-align: baseline;
+      }
+    }
+
+  }
+  .form-control{
+    height: 27px;
+    padding-right: 5px;
+  }
+  /*tr > td:nth-child(-n+2){
+    text-align: center;
+  }*/
+  tr > td{
+    text-align: center;
+    &:first-child{
+      text-align: left;
+    }
+    &.text-right{
+      text-align: right;
+    }
+    &:last-child{
+      text-align: right;
+    }
+    &:nth-child(n+4){
+      text-align: right;
+      min-width:80px;
+      max-width:80px;
+      width:80px;
+    }
+  }
+  tr > th{
+    text-align: center;
+    &:nth-child(-n+1){
+      text-align: left;
+    }
+  }
+  tr.inCart{
+    th{
+      text-align: center;
+      &:nth-child(-n+1){
+        text-align: left;
+      }
+      &:nth-child(3){
+        text-align: center;
+      }
+    }
+    td{
+      text-align: center;
+      background: #EAF7D9;
+      &:nth-child(n+3){
+        text-align: right;
+        min-width:80px;
+        max-width:80px;
+        width:80px;
+      }
+      &.name{
+        text-align: left;
+      }
+    }
+  }
+
+}
+
+#accordion{
+  .btn{
+    &:focus{
+      outline: none;
+    }
+    &.btn-success{
+      width:150px;
+    }
+    &.btn-warning{
+      width:150px;
+    }
+
+  }
+}
+.cart-total{
+  overflow: auto;
+  #total{
+    width:160px;
+    text-align: right;
+    float:right;
+    tr{
+      & td:last-child, td:first-child{
+        min-width:80px;
+        max-width:80px;
+        width:80px;
+      }
+    }
+  }
+}
+.cart{
+  .buttons{
+    width:70%;
+    margin:0 auto;
+    font-family: 'Calibri_Bold';
+    .right{
+
+    }
+    .btn:focus{
+      outline: none;
+    }
+    .btn-success{
+      background-color: #87a165;
+    }
+    .btn-warning{
+      background-color: #f47920;
+    }
+  }
+}

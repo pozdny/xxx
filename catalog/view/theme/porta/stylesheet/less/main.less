@@ -1,0 +1,515 @@
+@margin-top-20:20px;
+@margin-top-30:30px;
+@link-color:#2f72c3;
+@font-family: Helios_Regular, sans-serif;
+
+
+@import "elements";
+/*
+	==================
+	[IMPORT BOOTSTRAP CSS]
+	==================
+
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');*/
+/*
+	==================
+	[IMPORT FONT-AWESOME]
+	==================
+*/
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+/*
+	==================
+	[IMPORT FONTS]
+	==================
+*/
+@font-face {
+  font-family: 'Calibri_Bold';
+  src: local('calibrib'),
+  url('fonts/calibrib.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Helios_Regular';
+  src: url('fonts/helios_regular-webfont.eot');
+  src: local('helios_regular'),
+  url('fonts/helios_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/helios_regular-webfont.woff2') format('woff2'),
+  url('fonts/helios_regular-webfont.woff') format('woff'),
+  url('fonts/helios_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helios_Bold';
+  src: url('fonts/helios_bold-webfont.eot');
+  src: local('helios_bold'),
+  url('fonts/helios_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/helios_bold-webfont.woff2') format('woff2'),
+  url('fonts/helios_bold-webfont.woff') format('woff'),
+  url('fonts/helios_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Helios_Bold_Regular';
+  src: url('fonts/helioscondblackc_regular-webfont.eot');
+  src: local('helios_bold_regular'),
+  url('fonts/helioscondblackc_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/helioscondblackc_regular-webfont.woff2') format('woff2'),
+  url('fonts/helioscondblackc_regular-webfont.woff') format('woff'),
+  url('fonts/helioscondblackc_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Helios_Cond_Light';
+  src: local('Helios-Cond-Light'),
+  url('fonts/helios_cond_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html, body {
+  height:100%;
+  min-height:100%;
+  background: #fff;
+}
+
+body {
+  font-family: @font-family;
+  font-size: 13px;
+  min-width:978px;
+  position: relative;
+
+}
+.wrap{
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto;
+  padding-bottom:470px;
+  position: relative;
+
+}
+.container{
+  max-width: 978px;
+  min-width: 978px;
+  position: relative;
+  padding-left:5px;
+  padding-right: 5px;
+}
+.container-fluid  {
+  background: #fff;
+}
+.header{
+  width:100%;
+  height:240px;
+  background-image: url('../../../../../../image/main/headerfon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+/*.clearfooter {
+  height: 445px;
+  background:transparent;
+}*/
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 470px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+
+}
+/*
+	==================
+	[DIF]
+	==================
+*/
+.dif-icons{
+  width:35px;
+  height: 32px;
+  float:left;
+  background-image: url('../image/main/dif-icons.png');
+  background-repeat: no-repeat;
+}
+.btn{
+  line-height: 1.2;
+  padding:3px 12px 4px;
+  height: 27px;
+}
+
+.btn.btn-success,
+.btn.btn-warning{
+  font-size:1.1em;
+}
+
+.btn.btn-success{
+  background: #87a165;
+  font-family:'Calibri_Bold';
+  border-color: #748e59;
+  &:focus, &:active{
+    background: #87a165;
+    border-color: #748e59;
+  }
+}
+
+.btn.btn-warning{
+  background: #f47920;
+  font-family:'Calibri_Bold';
+  border-color: #de7421;
+  &:focus, &:active{
+    background: #f47920;
+    border-color: #de7421;
+  }
+}
+.btn, .slider, .name-site h1, .slideTopModel .title, .in-cat a,
+.category-main h1,
+.plus, .minus,
+.modal .modal-content,
+#notification .success,
+#similar_products h2{
+  .rounded(3px);
+}
+.pagination .links b, .pagination .links a{
+  .rounded(2px);
+}
+button.btn:focus:active, button.btn:focus, a.btn.in-cat:focus{
+  outline: none;
+}
+h1{
+  font-size: 2em;
+  margin-top:0.2em;
+}
+h2, .priceStr{
+  font-family: Calibri_Bold;
+}
+h2{
+  font-size: 1.6em;
+}
+.priceStr{
+  font-size: 1.9em;
+  .price-old{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.7em;
+    font-weight:normal;
+    text-decoration: line-through;
+    color:#333;
+  }
+}
+
+
+h3.invisible{
+  position: absolute;
+  .opacity(0);
+}
+.mt-20{
+  margin-top: @margin-top-20;
+}
+.mt-30{
+  margin-top: @margin-top-30;
+}
+a, .link_a{
+  color:@link-color;
+}
+a:hover, .link_a:hover{
+  cursor: pointer;
+  color:darken(@link-color, 15%)
+}
+.link_a{
+  text-decoration: underline;
+}
+a:focus{
+  outline: none;
+}
+.cont-dat-box{
+  color:#333333;
+  width:700px;
+  position: absolute;
+  padding:5px 0 5px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px 1px #313131;
+  -moz-box-shadow: 0px 0px 4px 1px #313131;
+  -webkit-box-shadow: 0px 0px 4px 1px #313131;
+  text-align: center;
+  font-size:1.3em;
+  font-family: 'Calibri';
+  left:139px;
+  z-index: 3;
+
+  span{
+    margin-left: 70px;
+  }
+}
+.breadcrumb{
+  font-family:@font-family;
+  font-size: 0.9em;
+  background: transparent;
+  padding:8px 0;
+  margin-bottom: 0px;
+
+}
+.pagination{
+  font-size: 0.9em;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 10px;
+  padding:0 7px;
+  .results{
+    float:right;
+    padding-top: 3px;
+  }
+  .links{
+    float:left;
+    a {
+      display: inline-block;
+      background: #c8c8c8;
+      padding: 2px 7px;
+      text-decoration: none;
+      color: #fff;
+      &:hover{
+        background: #d87027;
+      }
+    }
+    b {
+      display: inline-block;
+      padding: 2px 7px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #fff;
+      background: #d87027;
+    }
+  }
+}
+.btn.btnCart{
+  font-family: Calibri_Bold;
+  color:#fff;
+  min-width:156px;
+  background:#d61229;
+  line-height: 0.9;
+  margin-top:0px;
+  padding:3px 12px 4px;
+  &:hover{
+    color: #dbdbdb;
+  }
+}
+/*
+	==================
+	[BACKDROP]
+	==================
+*/
+.fade {
+
+  opacity: 0;
+  transition: opacity 0.15s linear 0s;
+}
+.fade.in {
+  opacity: 1;
+}
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0) url("../image/main/overlay.png") repeat scroll 0 0;
+  opacity: 0.9;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+/*
+	==================
+	[MODAL]
+	==================
+*/
+.modal {
+  bottom: 0;
+  display: none;
+  left: 0;
+  outline: 0 none;
+  overflow-x: auto;
+  overflow-y:auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1040;
+}
+
+.modal.in {
+  display: block;
+}
+#myModalZamerAnswer, #myModalBackCallAnswer{
+  .modal-body{
+    padding:30px 35px;
+    text-align: center;
+
+
+  }
+}
+.redStar {
+  color: red;
+}
+.modal.modalCustom .modal-content {
+  font-family: 'Calibri';
+  width:400px;
+  display: none;
+  position: absolute;
+  z-index: 1050;
+  overflow:hidden;
+  p{
+    font-weight: bold;
+    padding:5px 15px;
+    margin:0;
+  }
+  .modal-header{
+    h3{
+      text-align: center;
+      font-family: 'Calibri_Bold';
+    }
+  }
+  .modal-body{
+
+    font-size: 1.2em;
+    padding:5px 35px;
+
+    label{
+      font-weight: normal;
+    }
+    h4{
+      font-family: 'Calibri_Bold';
+    }
+    #zamerForm{
+      .text-order-checkbox{
+        float:left;
+      }
+      .block-order-checkbox{
+        text-align:left
+      }
+      .calendar{
+        height: 34px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+  }
+  .modal-footer{
+    .btn{
+      font-family: 'Calibri_Bold';
+      font-size: 1.2em;
+      background: #f47920;
+    }
+    .orderBtn{
+      width:150px;
+      display: block;
+      margin:0 auto;
+    }
+    .text-footer{
+      width:50%;
+      margin:15px auto 0;
+      text-align: center;
+    }
+  }
+  .tooltip{
+    opacity: 1;
+  }
+  div.error {
+    font-size: 0.8em;
+    bottom: 5px;
+    color: red;
+    display: block;
+    left: 290px;
+    padding: 3px;
+    position: absolute;
+    width: 180px;
+    line-height: 0.9;
+  }
+  /*label.error {
+    bottom: -25px;
+    color: red;
+    display: block;
+    font-weight: normal;
+    padding: 3px;
+    position: absolute;
+    width: 100%;
+  }*/
+  div.error i.fa {
+    color: #6cb44d;
+  }
+}
+.modal-open{
+  overflow:auto;
+}
+#notification{
+  position: fixed;
+  top:10px;
+  right:10px;
+  width:300px;
+  z-index: 3;
+  .success{
+    position: relative;
+    padding:20px 10px 20px 30px;
+    background: #eaf7d9;
+    border:1px solid #eee;
+    box-shadow: 0 2px 2px #dddddd;
+    .fa-times{
+      position: absolute;
+      top:5px;
+      right: 5px;
+      color: #6b6b6b;
+    }
+  }
+}
+.text-center{
+  text-align: center;
+}
+.showLink{
+  font-weight:normal;
+  display: block;
+  width:auto;
+
+  text-align:center;
+  margin:0 auto 10px;
+  color:#2f72c3;
+  &:hover{
+    color:#204e85;
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  i.fa[class*="fa-sort"]{
+    margin-top:0px;
+    line-height: 0.9;
+  }
+  i.fa.fa-sort-asc{
+    vertical-align: baseline;
+  }
+  i.fa.fa-sort-desc{
+    vertical-align: bottom;
+  }
+}
+.table-striped > tbody > tr:nth-of-type(2n+1){
+  background-color: #e8e8e8
+}
+.table-hover > tbody > tr:hover{
+  background-color: #f0f0f0
+}
+
+
+
+
+

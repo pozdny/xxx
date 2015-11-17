@@ -1,0 +1,405 @@
+$font-family_helios: Helios_Regular, sans-serif;
+$font-family_calibri: Calibri_Bold;
+
+.product-cart{
+  .product-main-block{
+    background: #fff;
+    width: 100%;
+    float: left;
+    margin-top:10px;
+    padding:10px 10px 5px;
+    h1{
+      font-family: $font-family_calibri;
+      font-size:1.4em;
+      width:90%;
+      float: left;
+      margin:0 0 5px 0;
+    }
+    .top-info{
+      display: block;
+      width:100%;
+      .upc{
+        font-family: $font-family_calibri;
+        font-size: 1.1em;
+        float: left;
+        width:100%;
+        color:#818181;
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+    .product-info{
+      display: block;
+      clear:both;
+      overflow:hidden;
+      width:100%;
+      margin-bottom: 10px;
+      .left{
+        float: left;
+        width:200px;
+        .thumb_color{
+          display: block;
+          width: 40px;
+          height: 40px;
+          float:left;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          opacity: 0.7;
+          transition: all 0.2s ease 0s;
+          &:hover {
+            opacity: 1;
+            transform: scale(1.1) rotate(0.1deg);
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+        .image-additional{
+          margin-top:5px;
+        }
+
+      }
+      .right{
+        float: right;
+        width:384px;
+        .description{
+          .tdPrice{
+            .price-old{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size:0.8em;
+              font-weight:normal;
+              text-decoration: line-through;
+              color:#333;
+            }
+            .price-new{
+              color:#CD0F08;
+            }
+          }
+          .btn.btnQ{
+            float: left;
+            width:18px;
+            height: 18px;
+            padding:0;
+            background-image: url('../image/main/dif4-icons.png');
+            background-repeat: no-repeat;
+            &.green{
+              background-color: #6da75f;
+            }
+            &.orange{
+              background-color: #f47920;
+            }
+            &.plus{
+              margin-left:3px;
+              background-position: -16px 0;
+            }
+            &.minus{
+              margin-right: 3px;
+              background-position: 0 0;
+            }
+            &.arrow-down{
+              background-position: -32px 0;
+            }
+          }
+          .priceS{
+            font-size:1.4em;
+          }
+          .priceStr{
+            font-size:2em;
+
+            color: #c40808;
+          }
+          .add_montag{
+            font-family: $font-family_calibri;
+            font-size: 1.1em;
+            width:100%;
+            margin:0 auto 15px ;
+            overflow: hidden;
+            padding:3px 0px;
+
+            & div:first-child{
+              text-align: right;
+              float: left;
+              width:360px;
+
+            }
+            label{
+              display: block;
+              margin:0 0 0 370px;
+              height: 20px;
+              width:15px;
+              padding-top:1px;
+
+            }
+          }
+          #komplect{
+            &.table{
+              & > tbody > tr > td:nth-child(-n+1){
+                font-size:0.9em
+              }
+            }
+          }
+          #formKom{
+            clear:both;
+            overflow:hidden;
+          }
+          .table{
+            clear: both;
+            font-size: 1em;
+            text-align: center;
+            margin-bottom: 0;
+
+            tr.inCart{
+              td{
+                background: #EAF7D9;
+              }
+
+            }
+            th{
+              font-family: $font-family_helios;
+              font-size: 0.9em;
+              text-align: center;
+            }
+            td{
+              font-family: $font-family_calibri;
+              font-size: 1.1em;
+              text-align: center;
+            }
+            & > thead > tr > th:nth-child(-n+1){
+              text-align: left;
+            }
+            & > tbody > tr > td:nth-child(-n+1){
+              text-align: left;
+            }
+            & > tbody > tr:last-child > td{
+              border:solid 1px #ddd;
+              border-width:1px 0 1px;
+            }
+            & tbody > tr >td:nth-child(-n+1),
+              thead > tr > th:nth-child(-n+1){
+              max-width:90px;
+              width:90px
+
+            }
+            & tbody > tr >td:nth-child(2),
+            thead > tr > th:nth-child(2){
+              width:90px;
+              max-width:90px;
+            }
+            & tbody > tr >td:last-child,
+            thead > tr > th:last-child{
+              width:70px;
+              text-align: right;
+            }
+            .input_col{
+              font-size:0.9em;
+              width:73px;
+              height: 25px;
+              float: right;
+              margin:0 auto;
+              .form-control{
+                padding:2px 3px;
+                border-radius: 0;
+                &.quantity{
+                  font-size:1em;
+                  width:30px;
+                  height: 18px;
+                  float: left;
+                  text-align: center;
+                }
+              }
+
+
+            }
+            /*&#polotna{
+              & tbody > tr >td:last-child{
+                background: red;
+                .input_col{
+                  width:75px;
+                  height: 25px;
+                  float: right;
+
+                }
+              }
+            }*/
+          }
+          .grey_small_text{
+            width:100%;
+            text-align: right;
+            float: left;
+            font-family: Colibri;
+            font-size: 0.8em;
+            color:#777;
+            padding-right: 0px;
+          }
+          .complect_block{
+            width:100%;
+            height: 30px;
+            padding:3px 8px;
+            float: left;
+            margin-top:5px;
+            .complect_text{
+              font-family: $font-family_calibri;
+              font-size: 1.1em;
+              float: left;
+            }
+            .arrow-down{
+              margin:3px 5px 0 3px;
+            }
+            abbr{
+              color:#2f72c3;
+              font-size: 0.8em;
+              line-height: 2.6;
+            }
+          }
+          .bottom{
+            .shares-img{
+              width:60px;
+              height: 64px;
+              margin:0 auto;
+              background-image: url("../image/main/dif3-icons.png");
+              &.shares5{
+                background-position: -241px 0px;
+                float: left;
+              }
+            }
+
+
+            .left{
+              .content{
+                padding-top:5px;
+                font-family: $font-family_calibri;
+                margin-left:60px;
+              }
+            }
+            .rightC{
+              padding-left: 10px;
+              .btnCart{
+                width:100%;
+              }
+              .content{
+                padding-top:10px;
+                .link_a{
+                  font-family: $font-family_calibri;
+                  display: block;
+                  text-align: center;
+                  padding-top:5px;
+                }
+              }
+            }
+          }
+          /*#blockSumma{
+            margin:0 0 20px;
+            font-family: 'Calibri_Bold';
+            line-height: 1.6;
+            .txt{
+              font-size: 1.5em;
+              float: left;
+              width:250px;
+              text-align: right;
+
+            }
+            #totalSum{
+              margin-left:250px;
+              text-align: right;
+              & span{
+                color:#333;
+                font-size: 1.1em;
+              }
+              #summa{
+                font-size: 1.6em;
+                color:#ff7a42;
+              }
+            }
+          }*/
+        }
+      }
+      .product-description{
+        width:100%;
+        float:left;
+        .title{
+          font-family: $font-family_calibri;
+          font-size: 1.4em;
+          text-align: center;
+          margin: 20px 0 10px;
+        }
+      }
+    }
+
+    .cont-dat-box_prod{
+      width:500px;
+      height: 34px;
+      margin:20px auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 4px 1px #313131;
+      color: #333333;
+      font-family: "Calibri";
+      font-size: 1.2em;
+      padding: 5px 0;
+      text-align: center;
+    }
+
+    #similar_products{
+      font-family: $font-family_helios;
+
+      margin: 0 -10px ;
+      .catalogElemBlock2{
+        padding-top:10px;
+      }
+      h2 {
+        background: #5e84ca none repeat scroll 0 0;
+        color: #ffffff;
+        font-family: $font-family_calibri;
+        font-size: 1.4em;
+        margin: 30px auto 20px;
+        padding: 4px 4px 6px;
+        position: relative;
+        text-align: center;
+        width: 60%;
+
+      }
+    }
+
+  }
+}
+/* slider */
+.slide{
+  float:left;
+}
+.bx-wrapper{
+  margin-bottom: 0;
+}
+.bx-wrapper .bx-viewport {
+  background-color: inherit !important;
+  border: medium none !important;
+  box-shadow: none !important;
+}
+#product_info .bx-wrapper .bx-next,
+#product_info .bx-wrapper .bx-prev{
+  width:13px;
+  height: 23px;
+}
+#product_info .bx-wrapper a{
+  background-image: url('../image/main/dif5-icons.png');
+  background-repeat: no-repeat;
+  top:50px;
+  &.bx-next{
+    background-position: -13px 0;
+    right: 0px;
+  }
+  &.bx-prev{
+    background-position: 0 0;
+    left: 0px;
+  }
+}
+.slide:hover{
+  /*background-image: url('../image/main/dif5-icons.png');
+  background-position: 50% 50%;*/
+  cursor:pointer;
+}
+#product_info .bx-pager.bx-default-pager {
+  display: none;
+}
+#product_info .bx-wrapper {
+  width: 228px;
+}

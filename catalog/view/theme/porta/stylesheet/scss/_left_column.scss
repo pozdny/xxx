@@ -1,0 +1,116 @@
+.nav{
+  &.menu{
+    font-family: 'Calibri';
+    & > li{
+      margin-bottom: 1px;
+      &.active {
+        a{
+
+        }
+        span{
+          color: #ffffff;
+          text-decoration: underline;
+        }
+        & .nav-stacked{
+          display:block;
+          & > li + li{
+            margin-top:0px;
+          }
+        }
+      }
+      & > a{
+        padding:0;
+      }
+      span{
+        display: block;
+        padding:8px 1px 8px 4px;
+        color:#fff;
+        font-size: 1.05em;
+        border: 2px solid #ffffff;
+      }
+      &.vhodnie-dveri span{
+        background:#3a6b87;
+        border-image: url(../image/main/bvhd-icons.png) 0 2 0 0 repeat;
+        -moz-border-image: url(../image/main/bvhd-icons.png) 0 2 0 0 repeat;
+        -webkit-border-image: url(../image/main/bvhd-icons.png) 0 2 0 0 repeat;
+        -o-border-image: url(../image/main/bvhd-icons.png) 0 2 0 0 repeat;
+        &:hover{
+          background: #30556c;
+        }
+      }
+      &.megkomnatnie-dveri span{
+        background:#5e84ca;
+        border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -moz-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -webkit-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -o-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        &:hover{
+          background: #4e68a1;
+        }
+      }
+      &.protivopozarnie-dveri span{
+        background: #389cb5;
+        border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -moz-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -webkit-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        -o-border-image: url(../image/main/bmkd-icons.png) 0 2 0 0 repeat;
+        &:hover{
+          background: #2a6b82;
+        }
+      }
+      &.furnitura span{
+        background:#5fb296;
+        border-image: url(../image/main/bfur-icons.png) 0 2 0 0 repeat;
+        -moz-border-image: url(../image/main/bfur-icons.png) 0 2 0 0 repeat;
+        -webkit-border-image: url(../image/main/bfur-icons.png) 0 2 0 0 repeat;
+        -o-border-image: url(../image/main/bfur-icons.png) 0 2 0 0 repeat;
+        &:hover{
+          background: #4a8c76;
+        }
+      }
+      &.factory span{
+        background:#e2cf52;
+        border-image: url(../image/main/bfactory-icons.png) 0 2 0 0 repeat;
+        -moz-border-image: url(../image/main/bfactory-icons.png) 0 2 0 0 repeat;
+        -webkit-border-image: url(../image/main/bfactory-icons.png) 0 2 0 0 repeat;
+        -o-border-image: url(../image/main/bfactory-icons.png) 0 2 0 0 repeat;
+        &:hover{
+          background: #d4c34c;
+        }
+      }
+      &.ustanovka span{
+        background:#F47920;
+        border-image: url("../image/main/bustan-icons.png") 0 2 0 0 repeat;
+        -moz-border-image: url("../image/main/bustan-icons.png") 0 2 0 0 repeat;
+        -webkit-border-image: url("../image/main/bustan-icons.png") 0 2 0 0 repeat;
+        -o-border-image: url("../image/main/bustan-icons.png") 0 2 0 0 repeat;
+        &:hover{
+          background: #d1691d;
+        }
+      }
+      &:hover{
+        cursor:pointer;
+      }
+      & > ul{
+        background: #fffffe;
+        & > li > a{
+          font-size: 1.05em;
+          padding:8px 5px 8px 10px;
+          color:#000;
+        }
+        & > li{
+          &.active{
+            a{
+              background: #dbdbdb;
+            }
+          }
+        }
+        &.nav-stacked{
+         display: none;
+        }
+      }
+
+    }
+  }
+
+}

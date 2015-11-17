@@ -1,0 +1,60 @@
+/* grid */
+$screen-xs-max:767px;
+$screen-sm-min: 768px;
+$screen-sm-max:991px;
+$screen-md-min:992px;
+$screen-md-max:1199px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1201px;
+$screen-portet-max: 1280px;
+@media (max-width: $screen-xs-max) {
+
+}
+@media (max-width: $screen-portet-max) {
+  .header{
+    .top{
+      .rasp{
+        font-size: 0.8em;
+        .phone{
+          line-height: 1.3;
+        }
+      }
+      .select-vist-zal{
+        #mainBlockSelect{
+          font-size: 1em;
+        }
+      }
+    }
+
+  }
+  /*.footer{
+    .footer-links{
+      background: blue;
+    }
+  }*/
+}
+@media  (max-width: $screen-sm-max){
+  .footer{
+    .container-fluid{
+      padding:0
+    }
+    .row{
+      margin:0;
+    }
+    .container{
+      margin: 0 -5px;
+    }
+    /*.footer-links{
+      background: yellow;
+    }*/
+  }
+  .header{
+    .top .rasp{
+      font-size: 0.8em;
+      .phone{
+        line-height: 1.3;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,44 @@
+aside{
+  font-family:Helios_Regular;
+  h2{
+    font-family: Calibri_Bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .n-o{
+    font-size: 0.9em;
+    border:solid 1px #9b9b90;
+    border-width: 0 0 1px 0;
+    padding-bottom: 20px;
+    position: relative;
+    .date{
+      font-family: Calibri_Bold;
+    }
+    .b-next{
+      color:#cdcecb;
+      position: absolute;
+      width:70px;
+      height: 17px;
+      background: #6e6d61;
+      -moz-border-radius: 3px 3px 0 0;
+      -webkit-border-radius: 3px 3px 0 0;
+      border-radius: 3px 3px 0 0;
+      text-align: center;
+      right: 0;
+      bottom:0;
+      padding: 1px 2px;
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+  .bottomNews{
+    font-size: 0.9em;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+
+  }
+}

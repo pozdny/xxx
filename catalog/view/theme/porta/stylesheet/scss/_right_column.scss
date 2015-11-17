@@ -1,0 +1,143 @@
+@import "aside";
+$li-height: 21px;
+  .img-men{
+    position: relative;
+    width:119px;
+    height: 276px;
+    margin-top:15px;
+    background: url('../image/main/men_zam.png') no-repeat;
+
+    .img-men-tab{
+      width:133px;
+      height: 99px;
+      background: url('../image/main/men_tab.png') no-repeat;
+      position: absolute;
+      bottom:0px;
+      display: block;
+      z-index:3;
+    }
+  }
+
+.box{
+  clear:both;
+  background:#fff;
+  padding:10px 0 10px 3px;
+  margin-top:43px;
+  .box-heading{
+    text-align:center;
+    margin-bottom:10px;
+  }
+}
+
+
+
+.mar-bo-20{
+  margin-bottom: 60px;
+}
+
+.box-filter{
+  list-style: none;
+  padding: 0;
+  li{
+    i{
+      margin-right: 5px;
+      font-size: 15px;
+    }
+    label{
+      font-size: 0.85em;
+      font-weight: normal;
+    }
+    span{
+      font-weight: 900;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 7px 0 15px 1px;
+      overflow:hidden;
+
+      li{
+        input{
+          margin-right: 3px;
+          margin-top: 3px;
+          float: left;
+        }
+        label{
+          margin-top:0px;
+          margin-bottom: 3px;
+          width:115px;
+        }
+      }
+    }
+  }
+
+  .img-filter{
+    opacity: 0.7;
+    width:15px;
+    height: 15px;
+    transition: all 0.2s ease 0s;
+    &:hover{
+      transform:scale(1.1) rotate(0.1deg);
+      opacity: 1;
+    }
+  }
+}
+#button-filter{
+  width:130px;
+  margin:0 auto;
+  display: block;
+}
+.zakaz-zamer-box{
+  width:560px;
+  height:auto;
+  background-color: #ffffff;
+  margin:80px auto;
+  padding: 20px;
+  h3{
+    text-align: center;
+    margin:0 0 20px 0;
+  }
+  .descr-opt-zamer{
+    margin-bottom:15px;
+  }
+  form{
+    ul{
+      list-style: none;
+      li{
+        .form-group{
+          position: relative;
+          input {
+            margin-left: 10px;
+          }
+          .pan-10{
+            margin-left: 10px;
+          }
+          .pan-30{
+            margin-left: 30px;
+          }
+          .prov-cent{
+            margin-left: 75px;
+          }
+          .al-cent{
+            margin-left: 158px;
+          }
+          .but-color{
+            background: linear-gradient(to top, #f47920, #fb841f);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .end-zakaz-zamer{
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
